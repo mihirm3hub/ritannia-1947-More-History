@@ -1,0 +1,435 @@
+<!-- Copyright (c) 2022 8th Wall, Inc. -->
+<!-- body.html is optional; elements will be added to your html body after app.js is loaded. -->
+<div class="recorder-container"></div>
+<div id="selectionWrapper" class="absolute-fill">
+  <div
+    style="
+      display: flex;
+      flex-direction: column;
+      padding: 0px calc(3.5vw + 5px);
+      align-items: center;
+      margin-top: 3rem;
+    ">
+    <div class="product-page-container">
+      <img src="./assets/BG-22.png" alt="" />
+    </div>
+    <div style="text-align: center; width: 80%; margin-top: 2vh">
+      <p class="topHeading"></p>
+      <p class="topHeading"></p>
+      <p class="secondLine">Choose your Britannia<br />product to scan</p>
+    </div>
+    <div
+      class="animate__animated animate__fadeInDown"
+      style="
+        display: flex;
+        width: 80%;
+        justify-content: space-around;
+        align-items: baseline;
+        margin-top: 3vh;
+      ">
+      <img id="BREAD" class="selecImg" src="./assets/Bread.png" alt="" width="40%" height="100%" />
+      <img
+        id="MILKBIKIS"
+        class="selecImg"
+        src="./assets/Milk-Bikis_updated_icon_1.png"
+        alt=""
+        width="40%"
+        height="100%" />
+    </div>
+    <div
+      class="animate__animated animate__fadeInDown"
+      style="
+        display: flex;
+        width: 80%;
+        justify-content: space-around;
+        align-items: baseline;
+        margin-top: 2vh;
+      ">
+      <img id="MARIE" class="selecImg" src="./assets/Marie.png" alt="" width="40%" height="100%" />
+      <img
+        id="GOODDAY"
+        class="selecImg"
+        src="./assets/Good-Day.png"
+        alt=""
+        width="40%"
+        height="100%" />
+    </div>
+    <div
+      class="animate__animated animate__fadeInDown"
+      style="
+        display: flex;
+        width: 80%;
+        justify-content: space-around;
+        align-items: baseline;
+        margin-top: 2vh;
+      ">
+      <img id="WINKINCOW" class="selecImg" src="./assets/wikin-cow.png" alt="" width="40%" />
+    </div>
+    <div class="row" style="flex-direction: column">
+      <p
+        id="watch-video"
+        style="
+          color: #e16545;
+          font-weight: bold;
+          text-align: center;
+          padding: 3px;
+          font-family: GurmukhiMN;
+          font-size: 0.8rem;
+          text-decoration: underline;
+        ">
+        Don't have the pack?<br />
+        <span style="text-decoration: underline"> Watch Here</span>
+        <br />
+      </p>
+      <a
+        href="http://www.swiggy.com/stores/instamart/collection-listing?collectionId=80960"
+        target="_blank"
+        style="
+          font-weight: bold;
+          text-align: center;
+          font-family: GurmukhiMN;
+          font-size: 0.8rem;
+          color: black;
+          text-decoration: underline;
+        ">
+        Get the product &gt;
+      </a>
+    </div>
+    <div class="Base1947">
+      <img
+        logo1947
+        src="./assets/1947-Txt-With-Base.png"
+        alt=""
+        style="height: 13vh; width: 36vw" />
+    </div>
+  </div>
+</div>
+
+<div id="videosWrapper" class="absolute-fill">
+  <!--  <div
+    style="
+      display: flex;
+      flex-direction: column;
+      padding: 0px calc(3.5vw + 5px);
+      align-items: center;
+      margin-top: 3rem;
+    ">
+    <div class="product-page-container">
+      <img src="./assets/BG-22.png" alt="" />
+    </div>
+    <div style="text-align: center; width: 80%; margin-top: 2vh">
+      <p class="topHeading">Unpack 1947% more</p>
+      <p class="topHeading">history with these packs.</p>
+    </div>
+    <div class="carousel-wrapper">
+      <div class="horizontal-carousel">
+        <iframe
+          class="carousel-item"
+          style="width: 100%; height: 100%; z-index: 70"
+          src="https://www.youtube.com/embed/hoBJU81m0oY"
+          title="YouTube video player"
+          frameborder="0"
+          allowfullscreen="allowfullscreen"
+          mozallowfullscreen="mozallowfullscreen"
+          msallowfullscreen="msallowfullscreen"
+          oallowfullscreen="oallowfullscreen"
+          webkitallowfullscreen="webkitallowfullscreen"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+        <iframe
+          class="carousel-item"
+          style="width: 100%; height: 100%; z-index: 70"
+          src="https://www.youtube.com/embed/XYXCGNCB4RA"
+          title="YouTube video player"
+          frameborder="0"
+          allowfullscreen="allowfullscreen"
+          mozallowfullscreen="mozallowfullscreen"
+          msallowfullscreen="msallowfullscreen"
+          oallowfullscreen="oallowfullscreen"
+          webkitallowfullscreen="webkitallowfullscreen"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+        <iframe
+          class="carousel-item"
+          style="width: 100%; height: 100%; z-index: 70"
+          src="https://www.youtube.com/embed/RkZd6zvM4i4"
+          title="YouTube video player"
+          frameborder="0"
+          allowfullscreen="allowfullscreen"
+          mozallowfullscreen="mozallowfullscreen"
+          msallowfullscreen="msallowfullscreen"
+          oallowfullscreen="oallowfullscreen"
+          webkitallowfullscreen="webkitallowfullscreen"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+        <iframe
+          class="carousel-item"
+          style="width: 100%; height: 100%; z-index: 70"
+          src="https://www.youtube.com/embed/ARp3sW5sydI"
+          title="YouTube video player"
+          frameborder="0"
+          allowfullscreen="allowfullscreen"
+          mozallowfullscreen="mozallowfullscreen"
+          msallowfullscreen="msallowfullscreen"
+          oallowfullscreen="oallowfullscreen"
+          webkitallowfullscreen="webkitallowfullscreen"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+        <iframe
+          class="carousel-item"
+          style="width: 100%; height: 100%; z-index: 70"
+          src="https://www.youtube.com/embed/Ffw6Q7NUJi4"
+          title="YouTube video player"
+          frameborder="0"
+          allowfullscreen="allowfullscreen"
+          mozallowfullscreen="mozallowfullscreen"
+          msallowfullscreen="msallowfullscreen"
+          oallowfullscreen="oallowfullscreen"
+          webkitallowfullscreen="webkitallowfullscreen"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+      <div class="carousel-arrows">
+        <div id="leftArrow" class="arrow left-arrow"><img src="./assets/left.png" /></div>
+        <div id="rightArrow" class="arrow right-arrow"><img src="./assets/right.png" /></div>
+      </div>
+      <br />
+      <span id="go-back">&larr; Go Back</span>
+    </div>
+    <div class="Base1947">
+      <img
+        logo1947
+        src="./assets/1947-Txt-With-Base.png"
+        alt=""
+        style="height: 13vh; width: 36vw" />
+    </div>
+  </div> -->
+</div>
+
+<div id="subtitles-wrapper">
+  <span id="subtitles"> </span>
+</div>
+
+<!-- Modal UI -->
+<div id="instructModal" class="modal-overlay">
+  <div class="modal1">
+    <img class="border" src="./assets/End-Options-1.png" />
+    <div class="cross" id="instruct-close"></div>
+    <div id="watchAgainOption" class="watchAgainOption"></div>
+    <div id="scanMoreOption" class="scanMoreOption"></div>
+    <div id="shareOption" class="shareOption"></div>
+  </div>
+</div>
+
+<div id="youtube-modal" class="modal-overlay">
+  <div class="modalYoutube">
+    <img class="borderYoutube" src="./assets/SocialMediaContainer.png" />
+    <div class="crossYoutube" id="watch-tutorial-close"></div>
+    <div class="youtubeModalContent">
+      <div id="bar" class="spinner1"></div>
+      <div class="carousel-wrapper">
+        <div class="horizontal-carousel">
+          <div class="carousel-item">
+            <p class="topText">Get 1947% more history from</p>
+            <iframe
+              style="width: 100%; height: 100%; z-index: 70"
+              src="https://www.youtube.com/embed/QnrtpvJZPwc"
+              id="videoFrame"
+              frameborder="0"
+              allowfullscreen="allowfullscreen"
+              mozallowfullscreen="mozallowfullscreen"
+              msallowfullscreen="msallowfullscreen"
+              oallowfullscreen="oallowfullscreen"
+              webkitallowfullscreen="webkitallowfullscreen"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+            <p id="videoTitle">Shri Gour Hari Das</p>
+          </div>
+        </div>
+        <div class="carousel-arrows">
+          <div id="leftArrow" class="arrow left-arrow"><img src="./assets/left.png" /></div>
+          <div id="rightArrow" class="arrow right-arrow"><img src="./assets/right.png" /></div>
+        </div>
+      </div>
+      <!-- <iframe
+        src="https://www.youtube.com/embed/A9kYbQuUW0M"
+        allowfullscreen=""
+        title="youtube-video"
+        frameborder="0"
+        style="width: 100%; height: 100%; z-index: 70"></iframe> -->
+    </div>
+  </div>
+</div>
+
+<div id="startScan" class="modal2-overlay">
+  <div class="modal2">
+    <button id="scan-close-btn" class="close-button">×</button>
+    <div class="modal2-content">
+      <p style="margin: 0px; font-family: GurmukhiMN; font-weight: bold; font-size: 14px">
+        Would you like to :-
+      </p>
+      <div id="physical-btn" style="display: flex; align-items: center; margin-top: 1vh">
+        <img
+          id="physical-img-blank"
+          src="./assets/checkbox.png"
+          alt="InitialScreen"
+          height="35"
+          width="35" />
+        <img
+          id="physical-img-filled"
+          style="display: none"
+          src="./assets/checkboxSelected.png"
+          alt="InitialScreen"
+          height="35"
+          width="35" />
+        <div
+          style="
+            border-color: rgb(125, 210, 125);
+            border-width: 1px;
+            border-style: solid;
+            width: 100%;
+            padding: 2%;
+            margin-left: 2vw;
+          ">
+          <div
+            style="
+              background-color: rgb(125, 210, 125);
+              display: flex;
+              align-items: center;
+              padding: 3%;
+            ">
+            <p
+              style="
+                margin: 0px 0px -2px;
+                font-family: GurmukhiMN;
+                font-weight: bold;
+                font-size: 0.5rem;
+              ">
+              SCAN A PHYSICAL PACK
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="internet-btn" style="display: flex; align-items: center; margin-top: 1.5vh">
+        <img
+          id="internet-filled"
+          src="./assets/checkboxSelected.png"
+          alt="InitialScreen"
+          style="display: none"
+          height="35"
+          width="35" />
+        <img
+          id="internet-blank"
+          src="./assets/checkbox.png"
+          alt="InitialScreen"
+          height="35"
+          width="35" />
+        <div
+          style="
+            border-color: rgb(125, 210, 125);
+            border-width: 1px;
+            border-style: solid;
+            width: 100%;
+            padding: 2%;
+            margin-left: 2vw;
+          ">
+          <div
+            style="
+              background-color: rgb(125, 210, 125);
+              display: flex;
+              align-items: center;
+              padding: 3%;
+            ">
+            <p
+              style="
+                margin: 0px 0px -2px;
+                font-family: GurmukhiMN;
+                font-weight: bold;
+                font-size: 0.5rem;
+              ">
+              SCAN AN IMAGE FROM THE INTERNET
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal UI -->
+<div id="shareModal" class="modal-overlay">
+  <div class="modal1">
+    <img class="border" src="./assets/SocialMediaContainer.png" />
+    <div class="cross" id="share-modal-close"></div>
+    <div class="modal1content">
+      <p id="watchAgn" style="text-decoration: underline; margin-bottom: 3vh">Watch again&gt;</p>
+      <p>Make these stories reach</p>
+      <p>1947% more people :)</p>
+    </div>
+    <div class="belowIcons">
+      <img src="./assets/facebook.png" alt="facebook" height="17%" width="17%" id="facebook" /><img
+        src="./assets/instagram.png"
+        alt="instagram"
+        height="17%"
+        width="17%"
+        id="instagram" /><img
+        src="./assets/twitter.png"
+        alt="twitter"
+        height="17%"
+        width="17%"
+        id="twitter" /><img
+        src="./assets/whatsapp.png"
+        alt="whatsapp"
+        height="17%"
+        width="17%"
+        id="whatsapp" />
+    </div>
+  </div>
+</div>
+<!-- Scanner UI -->
+<div class="overlay-ui" id="overlay-ui">
+  <img class="borderOverlay" src="./assets/BG-22_blank.png" alt="bg" />
+  <div class="innerText">
+    <p class="texts">Keep the</p>
+    <p id="prodName" class="texts">Britannia</p>
+    <p class="texts">logo in focus.</p>
+  </div>
+  <div class="box"></div>
+  <!-- <div id="recordButton"></div> -->
+  <div class="Base1947">
+    <img class="logo1947" src="./assets/1947-Txt-With-Base.png" alt="1947" />
+  </div>
+</div>
+<div id="mediaInst" class="texts mediaInstruct"></div>
+<div id="mediaInst2" class="texts mediaInstruct">
+  Move closer to have <br />
+  an immersive experience
+</div>
+
+<!-- A-frame scene -->
+<a-scene
+  xrextras-gesture-detector
+  landing-page
+  xrextras-loading
+  xrextras-runtime-error
+  handle-select
+  handle-modal
+  config-targets
+  renderer="colorManagement:true; webgl2: true; "
+  xrweb>
+  <a-assets> </a-assets>
+
+  <!--   <xrextras-capture-button></xrextras-capture-button> -->
+  <!-- <xrextras-capture-config
+    max-duration-ms="90000"
+    request-mic="auto"
+    include-scene-audio="true"
+    enable-end-card="false"></xrextras-capture-config> -->
+  <xrextras-capture-preview></xrextras-capture-preview>
+
+  <a-camera position="0 4 10"></a-camera>
+
+  <a-light type="directional" intensity="0.5" position="1 1 1"></a-light>
+
+  <a-light type="ambient" intensity="0.7"></a-light>
+</a-scene>
